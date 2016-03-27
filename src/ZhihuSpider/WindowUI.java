@@ -31,8 +31,6 @@ public class WindowUI extends JFrame implements ActionListener,Callback{
 		setSize(500,300);
 		setVisible(true);
 		button.setVisible(true);
-		String lookAndFeel =UIManager.getSystemLookAndFeelClassName();
-		UIManager.setLookAndFeel(lookAndFeel);
 		
 	}
 	void init(){
@@ -151,7 +149,7 @@ public class WindowUI extends JFrame implements ActionListener,Callback{
 	
 	public void threadfinished(){}
 	
-	public static void main(String[] args) throws ClassNotFoundException, InstantiationException, IllegalAccessException, UnsupportedLookAndFeelException{
+	public static void main(String[] args){
 		WindowUI myUI=new WindowUI();
 		ui=myUI;
 	}
